@@ -1,5 +1,5 @@
 import express from "express";
-import debug from "debug";
+const debug = require("debug")("app");
 import chalk from "chalk";
 
 const app = express();

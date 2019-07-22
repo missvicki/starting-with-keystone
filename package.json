@@ -4,7 +4,7 @@
   "description": "An application to assist passengers in purchasing a bus ticket, booking a seat on the bus and boarding the bus",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server/index.js --exec babel-node",
+    "start": "DEBUG=app,app:* nodemon ./server/index.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
