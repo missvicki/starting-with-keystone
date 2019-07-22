@@ -1,0 +1,46 @@
+{
+  "name": "busticketbooker",
+  "version": "1.0.0",
+  "description": "An application to assist passengers in purchasing a bus ticket, booking a seat on the bus and boarding the bus",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server/index.js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/missvicki/busticketbooker.git"
+  },
+  "author": "Victor Nomwesigwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/missvicki/busticketbooker/issues"
+  },
+  "homepage": "https://github.com/missvicki/busticketbooker#readme",
+  "dependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/node": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/register": "7.5.5",
+    "chalk": "2.4.2",
+    "debug": "4.1.1",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "13.2.0",
+    "eslint-plugin-import": "2.18.2",
+    "express": "4.17.1",
+    "nodemon": "1.19.1",
+    "prettier": "1.18.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
